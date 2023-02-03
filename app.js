@@ -5,7 +5,8 @@ const port = 3000;
 const mongoose = require('mongoose');
 const _ = require("lodash");
 
-
+// Deprecation alert
+mongoose.set('strictQuery', false);
 // Connect to MongoDB database: todolistDB
 mongoose.connect('mongodb+srv://admin-pablo:Test-123@cluster0.90erzc5.mongodb.net/todolistDB?retryWrites=true&w=majority');
 // Use express functionality to parse urlencoded responses 
